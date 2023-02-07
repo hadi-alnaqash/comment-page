@@ -1,0 +1,96 @@
+@use '/src/components/home/mixins' as *;
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  padding: 20px;
+  background: var(--White);
+  border-radius: 10px;
+  animation: come-in 1.5s ease-in-out;
+
+  .profile-pic {
+    width: 30px;
+    height: 30px;
+    background: url(../../assets/avatars/image-haitham.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  > .profile-pic {
+    display: none;
+  }
+
+  .comment-input {
+    position: relative;
+    height: 100px;
+    border: 2px solid var(--Light-gray);
+    color: var(--Dark-blue);
+    border-radius: 10px;
+    padding: 15px 25px;
+    resize: none;
+    scrollbar-width: none;
+
+    &::placeholder {
+      color: var(--Dark-blue);
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &:focus {
+      outline: 1.5px solid var(--Grayish-Blue);
+    }
+  }
+
+  .send-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-btn {
+    color: var(--White);
+    font-weight: var(--font-bold);
+    padding: 15px 30px;
+    background: var(--Moderate-blue);
+    border: 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+      opacity: 0.65;
+    }
+  }
+
+  @include media-md() {
+    width: 735px;
+    flex-direction: row;
+    padding: 25px;
+    gap: 25px;
+
+    > .profile-pic {
+      width: 50px;
+      height: 36px;
+      display: block;
+      margin: 0;
+    }
+
+    .comment-input {
+      width: 100%;
+    }
+
+    .send-btn-container {
+      align-items: flex-start;
+
+      .profile-pic {
+        display: none;
+      }
+    }
+  }
+}

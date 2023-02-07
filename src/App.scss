@@ -1,0 +1,39 @@
+@use '/src/components/home/mixins' as *;
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 2rem 0;
+  background-color: Var(--Very-light-gray);
+  
+  @include media-md() {
+    gap: 20px;
+    padding: 4rem 0;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: Var(--Very-light-gray);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--Grayish-Blue);
+  }
+}
+
+.display--none {
+  display: none !important;
+}

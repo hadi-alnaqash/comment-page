@@ -1,0 +1,18 @@
+@mixin media-sm() {
+  @media (min-width: 420px) {
+    @content;
+  }
+}
+
+
+@mixin media-md() {
+  @media (min-width: 752px) {
+    @content;
+  }
+}
+
+@mixin support($value) {
+  @supports (#{$value}) {
+    @content;
+  }
+}

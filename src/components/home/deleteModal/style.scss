@@ -1,0 +1,73 @@
+@use '/src/components/home/mixins' as *;
+
+.delete-confirmation-wrapper{
+  position: fixed;
+  z-index: 100;
+  top: 0; left: 0;
+  height: 100vh;  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color: #000000, $alpha: 0.3);
+
+  .delete-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    background: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+
+    .title{
+      color: var(--Dark-blue);
+      font-weight: var(--font-bold);
+      font-size: 1.2rem;
+    }
+
+    .confirmation-message{
+      line-height: 1.5;
+      color: var(--Grayish-Blue);
+    }
+
+    .btn-container{
+      display: flex;
+      justify-content: space-between;
+
+      button{
+        color: var(--White);
+        font-weight: var(--font-medium);
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover{
+          opacity: 0.65;
+        }
+      }
+      
+      .cancel-btn{
+        background: var(--Grayish-Blue);
+      }
+
+      .delete-btn{
+        background: var(--Soft-Red);
+        color: var(--White);
+      }
+    }
+
+    @include media-sm() {
+      width: 400px;
+      padding: 30px;
+
+      .btn-container {
+
+        button{
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}

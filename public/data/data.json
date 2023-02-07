@@ -1,0 +1,68 @@
+{
+    "currentUser": {
+      "image": { 
+        "png": "../../assets/avatars/image-haitham.png",
+        "webp": "../../assets/avatars/image-haitham.webp"
+      },
+      "username": "haitham"
+    },
+    "comments": [
+      {
+        "id": 1,
+        "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        "createdAt": "1 month ago",
+        "score": 12,
+        "user": {
+          "image": { 
+            "png": "../../assets/avatars/image-ali.png",
+            "webp": "../../assets/avatars/image-ali.webp"
+          },
+          "username": "ali"
+        },
+        "replies": []
+      },
+      {
+        "id": 2,
+        "content": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.",
+        "createdAt": "2 weeks ago",
+        "score": 5,
+        "user": {
+          "image": { 
+            "png": "../../assets/avatars/image-mohammed.png",
+            "webp": "../../assets/avatars/image-mohammed.webp"
+          },
+          "username": "mohammed"
+        },
+        "replies": [
+          {
+            "id": 3,
+            "content": "@mohammed Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "createdAt": "1 week ago",
+            "score": 4,
+            "replyingTo": "mohammed",
+            "user": {
+              "image": { 
+                "png": "../../assets/avatars/image-omar.png",
+                "webp": "../../assets/avatars/image-omar.webp"
+              },
+              "username": "omar"
+            }
+          },
+          {
+            "id": 4,
+            "content": "@mohammed Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.",
+            "createdAt": "2 days ago",
+            "score": 2,
+            "replyingTo": "omar",
+            "user": {
+              "image": { 
+                "png": "../../assets/avatars/image-haitham.png",
+                "webp": "../../assets/avatars/image-haitham.webp"
+              },
+              "username": "haitham"
+            }
+          }
+        ]
+      }
+    ]
+  }
